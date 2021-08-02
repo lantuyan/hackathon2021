@@ -35,6 +35,7 @@
 </head>
 <body>
     <div class="container">
+        <!-- navigation  -->
         <nav class="navbar navbar-expand-lg navbar-light " id="navbar">
             <div class="container-fluid" id="">
               <a class="navbar-brand" href="#">
@@ -74,6 +75,47 @@
               </div>
             </div>
         </nav>
+
+        <!-- content  -->
+
+        <div class="content row">
+            <div class="col-12">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row">
+                            <div class="col-6">
+                                <h2>Pfizer</h2>
+                                <p>con tent pfizer</p>
+                            </div>
+                            <div class="col-6">
+                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/vial_sm.png" alt="">
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        content 2
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        content 3
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+            </li>
+          </ul>
+      
     </div>
 </body>
 </html>
