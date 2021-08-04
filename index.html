@@ -5,42 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S4V</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="resetcss.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <style>
-        body{
-            background-color: #FF5A59;
-            display: flex;
-            height: 100vh;
-            width: 100%;
-            overflow-y: hidden; /* Hide vertical scrollbar */
-            overflow-x: hidden;
-            background
-        }
-        .container{
-            background: #FFF0DD;
-            width: 90%;
-            height: 80%;
-            margin: auto;
-            border-radius: 20px;
-            border: 3px solid black;
-            padding: 1% 2%;
-        }
-        #navbar{
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-        }
-    </style>
+  
 </head>
 <body>
     <div class="container">
-        <!-- navigation  -->
+      <!--start header-->
         <nav class="navbar navbar-expand-lg navbar-light " id="navbar">
             <div class="container-fluid" id="">
-              <a class="navbar-brand" href="#">
-                    <img src="https://baabrand.com/wp-content/uploads/2018/12/icon-thiet-ke-linh-vuc-logo-dich-vu-nha-hang-ca-phe-giai-tri-baa-brand-1.png" alt="logo-img" width="70" height="70">
-              </a>
+              <div class="logo-s4v">
+                <a class="navbar-brand" href="">
+                    <img src="image/logo-S4V.png" alt="logo-img" >
+                </a>
+              </div>
 
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -48,74 +32,138 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: space-around;">
                 <ul class="navbar-nav ">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link " aria-current="page" href="#">Trang chủ</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                    <a class="nav-link" href="#">Danh sách</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Đăng ký</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link " href="#" >Liên Hệ</a>
                   </li>
                 </ul>
-                <form class="d-flex">
+                <ul class="navbar-nav ">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Ủng Hộ Quỹ Vaccine</a>
+                  </li>
+                </ul>
+                <!-- <form class="d-flex">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                </form> -->
               </div>
             </div>
         </nav>
+        <!--end header-->
 
-        <!-- content  -->
+        <!--start slider-->
+        <div class="body">
+          <div class="slider">
+            <div class="slider-content" id="slider-1">
+              <div class="vac-info ">
+                  <div class="vac-name animate__fadeInDown animate__animated">
+                      <h1>Astrazeneca</h1>
+                  </div>
+                  <div class="vac-desc animate__animated animate__fadeInUp">
+                      <p>Dựa trên dữ liệu do nhà sản xuất cung cấp, vắc-xin của Astrazeneca-Oxford, hay AZD1222, đã được chứng minh đạt hiệu quả 63% trong một thử nghiệm lâm sàng quy mô lớn đang diễn ra.
+                        Một vắc-xin COVID-19 có hiệu quả ít nhất 50% và được sử dụng rộng rãi có thể giúp kiểm soát đại dịch....</p>
+                  </div>
+                  <a href="" class="btn-read animate__fadeInLeft animate__animated" id="btn-read-1">Đọc thêm</a>
+              </div>
+              <!--end vac-info-->
+              <div class="vac-img ">
+                  <img src="image/vaccine-astra.png" alt="" class="animate__backInRight animate__animated img-vaccine">
+                  <div class="bg-img animate__animated animate__fadeIn"id="border-1"></div>
+              </div>
+              <!--end vac-img-->
+            </div>
+            <!--end slider-content-->
 
-        <div class="content row">
-            <div class="col-12">
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <div class="row">
-                            <div class="col-6">
-                                <h2>Pfizer</h2>
-                                <p>con tent pfizer</p>
-                            </div>
-                            <div class="col-6">
-                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/vial_sm.png" alt="">
-                            </div>
-                        </div>
-                        
-                        
-                    </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        content 2
-                    </div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                        content 3
-                    </div>
+            <div class="slider-content " id="slider-2">
+              <div class="vac-info">
+                  <div class="vac-name animate__fadeInDown animate__animated">
+                      <h1>Moderna</h1>
+                  </div>
+                  <div class="vac-desc animate__animated animate__fadeInUp">
+                      <p>Dựa trên dữ liệu do nhà sản xuất cung cấp, vắc-xin của Moderna, hay mRNA-1273, đã được chứng minh đạt hiệu quả 94,1% trong một thử nghiệm lâm sàng quy mô lớn đang diễn ra.
+                        Một vắc-xin COVID-19 có hiệu quả ít nhất 50% và được sử dụng rộng rãi có thể giúp kiểm soát đại dịch...</p>
+                  </div>
+                  <a href="" class="btn-read btn-read animate__fadeInLeft animate__animated"id="btn-read-2">Đọc thêm</a>
+              </div>
+              <!--end vac-info-->
+              <div class="vac-img">
+                  <img src="image/vaccine-moder.png" alt="" class="animate__backInRight animate__animated img-vaccine">
+                  <div class="bg-img animate__animated animate__fadeIn" id="border-2"></div>
+              </div>
+              <!--end vac-img-->
+            </div>
+            <!--end slider-content-->
+
+            <div class="slider-content " id="slider-3">
+              <div class="vac-info">
+                  <div class="vac-name animate__fadeInDown animate__animated">
+                      <h1>Pfizer</h1>
+                  </div>
+                  <div class="vac-desc animate__animated animate__fadeInUp">
+                      <p>Dựa trên dữ liệu do nhà sản xuất cung cấp, vắc-xin của Pfizer-BioNTech, hay BNT162b2, đã được chứng minh đạt hiệu quả 95% trong một thử nghiệm lâm sàng quy mô lớn đang diễn ra.
+                        Một vắc-xin COVID-19 có hiệu quả ít nhất 50% và được sử dụng rộng rãi có thể giúp kiểm soát đại dịch...</p>
+                  </div>
+                  <a href="" class="btn-read animate__fadeInLeft animate__animated" id="btn-read-3">Đọc thêm</a>
+              </div>
+              <!--end vac-info-->
+              <div class="vac-img">
+                  <img src="image/vaccine-pfizer.png" alt="" class="animate__backInRight animate__animated img-vaccine">
+                  <div class="bg-img animate__animated animate__fadeIn" id="border-3"></div>
+              </div>
+              <!--end vac-img-->
+            </div>
+            <!--end slider-content-->
+            
+            <!--vac control-->
+            <div class="vac-control">
+                <div class="control-item">
+                  <img src="image/vaccine-astra.png" id="sl-1">
+                </div>
+                <div class="control-item">
+                  <img src="image/vaccine-moder.png" id="sl-2">
+                </div>
+                <div class="control-item">
+                  <img src="image/vaccine-pfizer.png" id="sl-3">
                 </div>
             </div>
+            <!--end vac control-->
+          </div>
+          <!--end slider-->
+          <div class="social-network">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-youtube-square"></i>
+          </div>
         </div>
-       
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
-            </li>
-          </ul>
-      
+        <!--end slider-->
     </div>
+
+    <!--App JS-->
+    <script>
+      document.getElementById("slider-2").style.display = 'none';
+      document.getElementById("slider-3").style.display = 'none';
+     document.getElementById("sl-1").onclick = function () {
+                document.getElementById("slider-1").style.display = 'flex';
+                document.getElementById("slider-2").style.display = 'none';
+                document.getElementById("slider-3").style.display = 'none';
+
+            };
+      document.getElementById("sl-2").onclick = function () {
+                document.getElementById("slider-2").style.display = 'flex';
+                document.getElementById("slider-1").style.display = 'none';
+                document.getElementById("slider-3").style.display = 'none';
+            }; 
+      document.getElementById("sl-3").onclick = function () {
+                document.getElementById("slider-3").style.display = 'flex';
+                document.getElementById("slider-2").style.display = 'none';
+                document.getElementById("slider-1").style.display = 'none';
+            };     
+    </script>
 </body>
 </html>
