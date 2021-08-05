@@ -18,9 +18,11 @@
     <!-- icon  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <style>
       .container .content{
-        padding: 40px 70px;
+        padding: 0px 70px;
         /* text-align: center; */
       }
       .container .content .progress-container{
@@ -122,39 +124,39 @@
     <div class="container">
       <!--start header-->
       <nav class="navbar navbar-expand-lg navbar-light " id="navbar">
-            <div class="container-fluid" id="">
-              <div class="logo-s4v">
-                <a class="navbar-brand" href="">
-                    <img src="image/logo-S4V.png" alt="logo-img" >
-                </a>
-              </div>
+        <div class="container-fluid" id="">
+          <div class="logo-s4v">
+            <a class="navbar-brand" href="">
+                <img src="image/logo-S4V.png" alt="logo-img" >
+            </a>
+          </div>
 
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: space-around;">
-                <nav class="stroke">
-                <ul class="navbar-nav ">
-                  <li class="nav-item " >
-                    <a class="nav-link"  href="#">Trang chủ</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link" href="#">Danh sách</a>
-                  <li class="nav-item ">
-                    <a class="nav-link" href="#">Ủng hộ</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link " href="#" >Liên hệ</a>
-                  </li>
-                </ul>
-              </nav>
-              <nav class="stroke">
-                <ul class="navbar-nav ">
-                  <li class="nav-item ">
-                    <a class="nav-link btn-sign-up"  href="#">Đăng ký</a>
-                  </li>
-                </ul>
-              </nav>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: space-around;">
+            <nav class="stroke">
+            <ul class="navbar-nav ">
+              <li class="nav-item " >
+                <a class="nav-link"  href="index.html">Trang chủ</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="list.html">Danh sách</a>
+              <li class="nav-item ">
+                <a class="nav-link" href="http://charityfund-bwd.herokuapp.com/">Ủng hộ</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="admin.html" >Liên hệ</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="stroke">
+            <ul class="navbar-nav ">
+              <li class="nav-item ">
+                <a class="nav-link btn-sign-up"  href="register.html">Đăng ký</a>
+              </li>
+            </ul>
+          </nav>
                 <!-- <form class="d-flex">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
@@ -165,31 +167,31 @@
       <!--end header-->
 
       <!-- content    -->
-      <div class="content">
+      <div class="content " >
           <div class="progress-container">
-            <div class="progress-multiple" id="progress">
+            <div class="progress-multiple animate__animated animate__fadeInDown" id="progress" >
               <div class="progress-t" id="progress-t"></div>
-                <div class="circle active">
+                <div class="circle active" data-bs-toggle="tooltip" data-bs-placement="top" title="Thông tin cơ bản">
                   <i class="bi bi-file-earmark-text-fill"></i>
                 </div>
-                <div class="circle">
+                <div class="circle" data-bs-toggle="tooltip" data-bs-placement="top" title="Khai báo dịch tễ">
                   <i class="bi bi-bookmark-heart-fill"></i>
                 </div>
-                <div class="circle">
+                <div class="circle" data-bs-toggle="tooltip" data-bs-placement="top" title="Tiền sử bệnh án">
                   <i class="bi bi-file-earmark-medical-fill"></i>
                 </div>
-                <div class="circle">
+                <div class="circle" data-bs-toggle="tooltip" data-bs-placement="top" title="Đăng kí">
                   <i class="bi bi-shield-fill-plus"></i>
                 </div>
              
             </div>
           </div>
-          <div class="content-form row">
+          <div class="content-form row animate__animated animate__fadeInUp">
             <div class="col-12 form-step" id="form-step1" style="display: block;">
               <div class="row">
                   <div class="col-12 row" style="margin-bottom: 10px;">
                     <div class="col-md-4 col-12">
-                      <label for="">Họ và tên</label>
+                      <label >Họ và tên</label>
                       <input type="text" class="form-control" placeholder="Họ và tên">
                     </div>
                     <div class="col-md-4 col-12">
@@ -239,7 +241,10 @@
                     <div class="col-md-4 col-12">
                       <label for="">Đối tượng ưu tiên</label>
                       <select class="form-select" aria-label="Default select example">
-                        <option selected >Đẹp trai</option>
+                        <option selected >Người làm việc trong ngành y tế</option>
+                        <option selected >Người tham gia phòng chống dịch</option>
+                        <option selected >Lực lượng công an, quân đội</option>
+                        <option selected >Không có</option>
                       </select>
                     </div>
                   </div>
@@ -395,7 +400,7 @@
             </div>
             <div class="col-12 form-step" id="form-step4" style="display: none;">
               <div class="row">
-                  <div class="col-12" style="padding-left: 0px;">
+                  <div class="col-12" style="padding-left: 0px; margin-bottom: 10px;">
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
@@ -404,7 +409,7 @@
                           </button>
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                          <div class="accordion-body">Đăng kí xét nghiệm covid 19 giành cho người có triệu chứng bệnh nghi nhiễm covid 19</div>
                         </div>
                       </div>
                       <div class="accordion-item">
@@ -414,7 +419,7 @@
                           </button>
                         </h2>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                          <div class="accordion-body">Đăng kí tiêm vắc xin dành cho người bình thường hông có chiệu chứng nhiễm covid 19</div>
                         </div>
                       </div>
                       <div class="accordion-item">
@@ -424,25 +429,43 @@
                           </button>
                         </h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                          <div class="accordion-body"> Dựa trên dữ liệu do nhà sản xuất cung cấp, vắc-xin của Astrazeneca-Oxford, hay AZD1222, đã được chứng minh đạt hiệu quả 63% trong một thử nghiệm lâm sàng quy mô lớn đang diễn ra.
+                            Một vắc-xin COVID-19 có hiệu quả ít nhất 50% và được sử dụng rộng rãi có thể giúp kiểm soát đại dịch....</div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-6">
-                        <div class="btn btn-choice">Đăng kí xét nghiệm</div>
+                  <div class="col-md-6 col-12">
+                    <label for="">Đăng kí</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option id="xn">Xét nghiệm covid 19</option>
+                      <option id="vx">Tiêm vắc xin</option>
+                    </select>
                   </div>
-                  <div class="col-6">
-                        <div class="btn btn-choice">Đăng kí tiêm vắc xin</div>
+                  <div class="col-md-6 col-12">
+                    <label for="">Ngày mong muốn</label>
+                    <input type="date" class="form-control" placeholder="Ngày mong muốn">
                   </div>
+                 
+              
                   
               </div>
             </div>
           </div>
           <div class="col-12 block-move" style="padding: 0;display: flex; ">
             <button type="submit" class="btn btn-success" id="prev" disabled>Quay lại</button>
-            <button type="submit" class="btn btn-success" id="next" >Tiếp theo</button>
+           
+              <button type="submit" class="btn btn-success" id="next" >
+                Tiếp theo
+              </button>
+            
+            
           </div>
+
+
+          <!-- Modal -->
+        <!-- Modal -->
+     
           
       </div>
     </div>
@@ -453,6 +476,10 @@
       const next =document.getElementById("next");
       const circles = document.querySelectorAll(".circle");
 
+      // const vacxin = document.getElementById("vx");
+      // const xetnghiem =document.getElementById("xn");
+      // const nextpage=document.getElementById("nextpage");
+      
       let currentActive =1;
 
       next.addEventListener("click", ()=>{
@@ -460,6 +487,7 @@
         
         if(currentActive > circles.length){
           currentActive = circles.length;
+          window.location="list.html";
         }
         update();
       });
@@ -512,9 +540,25 @@
         }
         if(currentActive === 4){
           document.getElementById("form-step4").style.display = "block";
+          next.disabled = false;
+          next.innerHTML ="Xác nhận";
+          next.style.backgroundColor = "blue";
+          
+
+        }
+        else{
+          next.innerHTML = "Tiếp theo";
+          next.style.backgroundColor = "#28a745";
         }
 
       }
+      
+    
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      });
+
     </script>
 
   
